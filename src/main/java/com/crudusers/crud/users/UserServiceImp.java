@@ -11,7 +11,7 @@ public class UserServiceImp implements UserService{
     private UserRepository repositorio;
     @Override
     public List<Usuario> listar() {
-        return null;
+        return this.repositorio.findAll();
     }
 
     @Override
